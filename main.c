@@ -8,6 +8,7 @@
 int main(int argc, char *argv[])
 {
     int opcional = 0;
+    int a;
 
     if(argv[2] != NULL) /*verifica se o argumento 2 existe*/
     {
@@ -15,15 +16,21 @@ int main(int argc, char *argv[])
         {
             opcional = 1; /*opcional (feito para forçar uma característica booleana)*/
         }
+        else
+        {
+            printf("Segundo argumento é inválido!");
+            return 0;
+        }
     }
     /*recebe o número de disco*/
-    int a = myAtoi(argv[1]);
+
 
     /*cria as pilhas*/
     PILHA *origem = createStack('A');
     PILHA *auxiliar = createStack('B');
     PILHA *destino = createStack('C');
     /*popula a pilha de origem*/
+    a = myAtoi(argv[1]);
     populaHanoi(origem, a);
 
     /*printa o que é mostrado no console*/
