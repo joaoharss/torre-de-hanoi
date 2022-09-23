@@ -1,6 +1,6 @@
 To compille that code use the command line:
 
-gcc -Wall -pedantic -o name.exe main.c funcoes.c 
+gcc -Wall -pedantic -o name.exe pilha.c noh.c funcoes.c main.c
 
 To run this code use:
 
