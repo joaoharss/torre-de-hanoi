@@ -1,0 +1,15 @@
+To compille that code use the command line:
+
+gcc -Wall -pedantic -o name.exe main.c funcoes.c 
+
+To run this code use:
+
+./name (numOfDisks) -v (to see the algorithm working)
+
+or
+
+./name (numOfDisks) to see only results.
+
+
+
+Enjoy :D
